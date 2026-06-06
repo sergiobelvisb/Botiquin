@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "CardioLab": {
+    "Botiquin": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -68,10 +68,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "CardioLab:build:production"
+              "buildTarget": "Botiquin:build:production"
             },
             "development": {
-              "buildTarget": "CardioLab:build:development"
+              "buildTarget": "Botiquin:build:development"
             }
           },
           "defaultConfiguration": "development"
