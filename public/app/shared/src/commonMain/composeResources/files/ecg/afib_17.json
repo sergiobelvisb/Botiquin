@@ -1,0 +1,23 @@
+{
+  "ecg_id": 17,
+  "codigo": "AFIB",
+  "diagnostico": "Fibrilacion auricular",
+  "fs": 500,
+  "n_muestras": 5000,
+  "derivaciones": [
+    "I",
+    "II",
+    "III",
+    "AVR",
+    "AVL",
+    "AVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "hr_bpm": 152,
+  "fichero_bin": "afib_17.bin"
+}

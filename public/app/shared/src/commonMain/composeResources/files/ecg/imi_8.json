@@ -1,0 +1,23 @@
+{
+  "ecg_id": 8,
+  "codigo": "IMI",
+  "diagnostico": "Infarto de cara inferior",
+  "fs": 500,
+  "n_muestras": 5000,
+  "derivaciones": [
+    "I",
+    "II",
+    "III",
+    "AVR",
+    "AVL",
+    "AVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "hr_bpm": 74,
+  "fichero_bin": "imi_8.bin"
+}
