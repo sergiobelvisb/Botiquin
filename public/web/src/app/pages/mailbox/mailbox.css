@@ -1,0 +1,143 @@
+.buzon-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* TARJETA */
+  .buzon-card {
+    width: 40%;
+    max-width: 650px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  /* TITULO */
+  h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    color: #4c3620;
+    text-align: center;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #7a6a5a;
+    font-size: 0.95rem;
+  }
+
+  span {
+    font-size: 0.75rem;
+    opacity: 0.5;
+  }
+  
+  /* FORM */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #4c3620;
+  }
+  
+  /* INPUTS */
+  input, textarea {
+    color: #3f5a31;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s;
+  }
+
+
+  
+  input:focus,
+  textarea:focus {
+    border-color: #4c6b3c;
+  }
+  
+  /* TEXTAREA */
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* RADIO BUTTONS */
+  .radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+
+  input[type="radio"] {
+    accent-color: #3f5a31;
+  }
+  
+  /* BOTON */
+  button {
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #4c6b3c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background: #3f5a31;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .buzon-card {
+        width: 80%;
+        max-width: 650px;
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+  
+    .radio-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 480px){
+    .buzon-card {
+        width: 100%;
+        max-width: 650px;
+        background: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+  
+    .radio-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

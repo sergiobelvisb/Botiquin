@@ -1,0 +1,27 @@
+<div class="page">
+  <header class="header">
+      <div class="left">
+        <a href="">
+          <img src="assets/medkit.png"/>
+          <span class="title">Botiquín</span>
+        </a>
+      </div>
+    
+      <div class="right">
+        <a routerLink="/mailbox">
+          <i class="bi bi-envelope-fill"></i>
+          Buzón
+        </a>
+        <a routerLink="/about">Quiénes somos</a>
+        <a routerLink="/login">Acceder</a>
+      </div>
+    </header>
+    
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+
+    <footer class="footer">
+      <p>Botiquín © 2026</p>
+    </footer>
+</div>

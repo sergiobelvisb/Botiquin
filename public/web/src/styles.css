@@ -1,0 +1,26 @@
+:root {
+    --color-primary: #4c3620;
+    --color-secondary: ;
+}
+
+@font-face {
+    font-family: 'Sentient';
+    src: url('/fonts/Sentient-Medium.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sentient-BoldItalic';
+    src: url('/fonts/Sentient-BoldItalic.woff2') format('woff2');
+    font-display: swap;
+}
+
+body {
+    font-family: 'Sentient', sans-serif;
+    background-color: #f3f4f1;
+    color: #4c3620;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sentient-BoldItalic', 'Sentient';
+}

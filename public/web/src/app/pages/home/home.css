@@ -1,0 +1,149 @@
+.hero {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* TITULO */
+h1 {
+  font-size: clamp(2.2rem, 6vw, 6rem);
+  margin: 0;
+  color: #4c3620;
+  letter-spacing: 1px;
+}
+
+/* CONTENEDOR DEL TITULO */
+.title-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* IMAGEN DECORATIVA DEL TITULO */
+.title-container span img {
+  position: absolute;
+
+  width: 6vw;
+  max-width: 100px;
+  min-width: 40px;
+  height: auto;
+
+  opacity: 0.3;
+
+  top: -45%;
+  left: 53%;
+  transform: translateX(-50%);
+
+  z-index: 1;
+}
+
+/* asegura que el h1 esté por encima */
+.title-container h1 {
+  position: relative;
+  z-index: 2;
+}
+
+/* SUBTITULO */
+.subtitle {
+  max-width: 500px;
+  margin-top: 20px;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: #6b5a4a;
+  line-height: 1.5;
+}
+
+/* BOTON */
+.btn {
+  margin-top: 30px;
+  background: #4c6b3c;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #3f5a31;
+}
+
+/* TEXTO PEQUEÑO */
+.small {
+  margin-top: 25px;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #8a857a;
+}
+
+/* ========================= */
+/* RESPONSIVE ADICIONAL      */
+/* ========================= */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .title-container span img {
+    position: absolute;
+  
+    width: 7vw;
+    max-width: 100px;
+    min-width: 40px;
+    height: auto;
+  
+    opacity: 0.3;
+  
+    top: -30%;
+    left: 51%;
+    transform: translateX(-50%);
+  
+    z-index: 1;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .title-container span img {
+    position: absolute;
+  
+    width: 8vw;
+    max-width: 100px;
+    min-width: 40px;
+    height: auto;
+  
+    opacity: 0.3;
+  
+    top: -20%;
+    left: 49%;
+    transform: translateX(-50%);
+  
+    z-index: 1;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
